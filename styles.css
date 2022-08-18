@@ -2,6 +2,9 @@
   --black-color: #1A2236;
 
 }
+* {
+  box-sizing: border-box;
+}
 
 .mobile-nav {
   display: flex;
@@ -9,7 +12,7 @@
 }
 
 .name-tag {
-
+margin-left: 10px;
 width: 220px;
 height: 100px;
 left: 16px;
@@ -23,7 +26,7 @@ line-height: 100%;
 }
 
 .about-tag {
-
+margin-left: 10px;
 width: 288px;
 height: 126px;
 left: 16px;
@@ -43,15 +46,18 @@ font-weight: 500;
 font-size: 16px;
 background-color: #1A2236;
 width: 288px;
-height: 40px;
+height: 50px;
 color: #ffffff;
 line-height: 24px;
 display: inline-block;
-text-align: center; 
+text-align: center;
 padding-top: 15px;
+margin-left: 10px;
 }
 
 .footer-img {
   display: flex;
   flex-grow: 5;
+  width: 320px;
+  height: 160px;
 }
