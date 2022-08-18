@@ -1,0 +1,78 @@
+:root {
+  --black-color: #1a2236;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url("Images/image_geometry_1.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 16px;
+  padding-top: 19px;
+}
+
+.name-tag {
+  width: 220px;
+  height: 100px;
+  margin-top: 104px;
+  margin-bottom: 0%;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.about-tag {
+  width: 288px;
+  height: 126px;
+  margin-top: 20px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.dark-bg {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #1a2236;
+  width: 288px;
+  height: 50px;
+  color: #fff;
+  line-height: 24px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.body-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-image {
+  background-image: url("Images/image_geometry_2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 160px;
+  margin-top: 32px;
+}
