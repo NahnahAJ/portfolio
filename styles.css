@@ -4,14 +4,15 @@
 
 * {
   box-sizing: border-box;
+
   /* padding: 0px;
   margin: 0px; */
 }
 
 body {
   /* width: 320px; */
- background: url("images/image_geometry_1.png");
- background-repeat: no-repeat;
+  background: url("images/image_geometry_1.png");
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -20,7 +21,6 @@ body {
   justify-content: flex-end;
   left: 284px;
   top: 31px;
-
 }
 
 .name-tag {
@@ -35,7 +35,7 @@ body {
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
-   margin-left: 40px;
+  margin-left: 40px;
 }
 
 .about-tag {
@@ -63,24 +63,20 @@ body {
   line-height: 24px;
   display: inline-block;
   text-align: center;
- 
 }
 
 .body-display {
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-  .footer-image {
-    background-image: url("images/image_geometry_2.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    height: 160px;
-    margin-top: 32px;
-  }
-
+.footer-image {
+  background-image: url("images/image_geometry_2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 160px;
+  margin-top: 32px;
+}
