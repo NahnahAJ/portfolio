@@ -2,8 +2,7 @@
 
 # Portfolio
 
-> Description the project.
-
+> Building my personal portfolio but beginning with the "mobile first" technique.
 
 ## Built With
 
