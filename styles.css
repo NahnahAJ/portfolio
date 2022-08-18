@@ -2,3 +2,56 @@
   --black-color: #1A2236;
 
 }
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-tag {
+
+width: 220px;
+height: 100px;
+left: 16px;
+top: 104px;
+
+font-family: 'Playfair Display', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 100%;
+}
+
+.about-tag {
+
+width: 288px;
+height: 126px;
+left: 16px;
+top: 224px;
+
+font-family: 'Poppins', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.01em;
+}
+
+.dark-bg {
+font-family: "Poppins", Arial, Helvetica, sans-serif;
+font-weight: 500;
+font-size: 16px;
+background-color: #1A2236;
+width: 288px;
+height: 40px;
+color: #ffffff;
+line-height: 24px;
+display: inline-block;
+text-align: center; 
+padding-top: 15px;
+}
+
+.footer-img {
+  display: flex;
+  flex-grow: 5;
+}
