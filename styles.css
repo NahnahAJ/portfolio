@@ -9,8 +9,7 @@
 }
 
 body {
-  /* width: 320px; */
-  background: url("images/image_geometry_1.png");
+  background: url("Images/image_geometry_1.png");
   background-repeat: no-repeat;
   position: relative;
 }
@@ -20,9 +19,6 @@ body {
   justify-content: flex-end;
   padding-right: 16px;
   padding-top: 19px;
-
-  /* left: 284px;
-  top: 31px; */
 }
 
 .name-tag {
@@ -36,8 +32,6 @@ body {
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
-  margin-left: 35px;
-  align-self: flex-start;
 }
 
 .about-tag {
@@ -70,12 +64,11 @@ body {
 .body-display {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
   align-items: center;
 }
 
 .footer-image {
-  background-image: url("images/image_geometry_2.svg");
+  background-image: url("Images/image_geometry_2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
