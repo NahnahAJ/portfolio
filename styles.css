@@ -161,6 +161,10 @@ font-family: 'Poppins', sans-serif;
   padding-left: 8px;
 }
 
+.skills-card {
+  margin-top: -64px;
+}
+
 .arrow-icon {
   margin-right: 20px;
 }
@@ -170,3 +174,11 @@ font-family: 'Poppins', sans-serif;
   grid-template-columns: 390px;
 }
 
+.mask-container {
+  display: grid;
+  grid-template-rows: 289px;
+  row-gap: 5em;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 0%;
+} 
