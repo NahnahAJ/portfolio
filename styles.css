@@ -68,7 +68,8 @@ body {
 .body-display {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 20px;
 }
 
 .footer-image {
@@ -138,7 +139,6 @@ height: 16px;
   gap: 10px;
   padding-left: 20px;
   padding-top: 25px;
-  margin-bottom: 20px;
 }
 
 .link {
@@ -163,5 +163,10 @@ font-family: 'Poppins', sans-serif;
 
 .arrow-icon {
   margin-right: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 390px;
 }
 
