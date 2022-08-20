@@ -1,10 +1,9 @@
 :root {
   --black-color: #1a2236;
   --blue-color: #98dede;
-  --deep-blue: #1C528A;
-  --pink-color: #E2505C;
-  --yellow-color: #FEBF52;
-
+  --deep-blue: #1c528a;
+  --pink-color: #e2505c;
+  --yellow-color: #febf52;
 }
 
 *,
@@ -247,7 +246,7 @@ h3 {
 
 .languages {
   background: url("icons/hash.svg");
-  background-color: #1C528A;
+  background-color: #1c528a;
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: bottom;
@@ -255,7 +254,7 @@ h3 {
 
 .frameworks {
   background: url("icons/rectangles.svg");
-  background-color:#E2505C;
+  background-color: #e2505c;
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: bottom;
@@ -263,27 +262,27 @@ h3 {
 
 .skills {
   background: url("icons/bulb.svg");
-  background-color: #FEBF52;
+  background-color: #febf52;
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: bottom;
 }
 
 p {
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 20px;
-line-height: 30px;
-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
 }
 
 .list {
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 30px;
-letter-spacing: -0.0525em;
-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.0525em;
+  color: #fff;
 }
