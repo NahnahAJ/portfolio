@@ -18,8 +18,8 @@
 👤 **Nahnah Ahjuwah**
 
 - GitHub: [@githubhandle](https://github.com/NahnahAJ)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Twitter: [@twitterhandle](https://twitter.com/NahnahAhjuwah)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/felicia-awuah-0674a7152/)
 
 
 ## 🤝 Contributing
