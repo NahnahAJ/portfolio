@@ -1,6 +1,10 @@
 :root {
   --black-color: #1a2236;
   --blue-color: #98dede;
+  --deep-blue: #1C528A;
+  --pink-color: #E2505C;
+  --yellow-color: #FEBF52;
+
 }
 
 *,
@@ -174,14 +178,6 @@ h3 {
   padding-left: 8px;
 }
 
-.skills-card {
-  margin-top: -64px;
-}
-
-.mask-group {
-  width: 22em;
-}
-
 .get-buttton {
   display: inline-flex;
   flex-direction: row;
@@ -192,6 +188,14 @@ h3 {
   grid-template-columns: 390px;
 }
 
+/* .skills-card {
+  margin-top: -64px;
+}
+
+.mask-group {
+  width: 22em;
+}
+
 .mask-container {
   display: grid;
   grid-template-rows: 289px;
@@ -199,7 +203,7 @@ h3 {
   margin-top: 10px;
   margin-left: 20px;
   margin-bottom: 0%;
-}
+} */
 
 .about-section {
   display: flex;
@@ -225,4 +229,61 @@ h3 {
   padding-top: 5px;
   padding-left: 20px;
   width: 45px;
+}
+
+.languages,
+.frameworks,
+.skills {
+  width: 90%;
+  height: 300px;
+  margin-left: 20px;
+  margin-bottom: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 80px;
+  padding-top: 40px;
+}
+
+.languages {
+  background: url("icons/hash.svg");
+  background-color: #1C528A;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: bottom;
+}
+
+.frameworks {
+  background: url("icons/rectangles.svg");
+  background-color:#E2505C;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: bottom;
+}
+
+.skills {
+  background: url("icons/bulb.svg");
+  background-color: #FEBF52;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: bottom;
+}
+
+p {
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 30px;
+color: #fff;
+}
+
+.list {
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: -0.0525em;
+color: #fff;
 }
