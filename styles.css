@@ -115,7 +115,8 @@ h2 {
   margin-bottom: 50px;
 }
 
-h3, h4 {
+h3,
+h4 {
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -285,9 +286,8 @@ p {
   color: #fff;
 }
 
-
 .get-started {
-  background-color: #F9F9FA;
+  background-color: #f9f9fa;
 }
 
 ul {
@@ -299,8 +299,8 @@ ul {
 textarea {
   width: 340px;
   height: 75px;
-  background-color: #FFFFFF;
-  border: 1px solid #DFDFE0;
+  background-color: #fff;
+  border: 1px solid #dfdfe0;
   border-radius: 7px;
   margin-bottom: 10px;
   font-family: "poppins", sans-serif;
@@ -313,11 +313,11 @@ textarea {
 }
 
 ::placeholder {
-width: 200px;
-height: 15px;
-margin-top: 10px;
-padding-top: 10px;
-color: #7D7C84;
+  width: 200px;
+  height: 15px;
+  margin-top: 10px;
+  padding-top: 10px;
+  color: #7d7c84;
 }
 
 textarea {
