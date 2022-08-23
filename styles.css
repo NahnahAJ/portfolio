@@ -79,6 +79,15 @@ body {
   margin-top: 10px;
 }
 
+button:hover {
+  background-color: #272d3a;
+}
+
+button:active {
+  background-color: #7d7c84;
+  color: #1a2236;
+}
+
 .body-display {
   display: flex;
   flex-direction: column;
