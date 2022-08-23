@@ -14,6 +14,7 @@
   margin: 0;
 }
 
+.get-started,
 body {
   background: url("Images/image_geometry_1.png");
   background-repeat: no-repeat;
@@ -54,7 +55,8 @@ body {
 }
 
 .dark-bg,
-.dark-bg-cv {
+.dark-bg-cv,
+.dark-bg-submit {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -71,6 +73,10 @@ body {
 
 .dark-bg-cv {
   padding-bottom: 6px;
+}
+
+.dark-bg-submit {
+  margin-top: 10px;
 }
 
 .body-display {
@@ -109,7 +115,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-h3 {
+h3, h4 {
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -117,6 +123,10 @@ h3 {
   line-height: 100%;
   color: #1a2236;
   margin-top: 35px;
+}
+
+h4 {
+  padding-top: 50px;
 }
 
 .blue-bg {
@@ -187,23 +197,6 @@ h3 {
   grid-template-columns: 390px;
 }
 
-/* .skills-card {
-  margin-top: -64px;
-}
-
-.mask-group {
-  width: 22em;
-}
-
-.mask-container {
-  display: grid;
-  grid-template-rows: 289px;
-  row-gap: 5em;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-bottom: 0%;
-} */
-
 .about-section {
   display: flex;
   flex-direction: column;
@@ -211,7 +204,8 @@ h3 {
   padding: 20px;
 }
 
-.about-section-tag {
+.about-section-tag,
+.about-section-tag-start {
   margin-top: 20px;
   width: 288px;
   height: 126px;
@@ -222,6 +216,10 @@ h3 {
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #1a2236;
+}
+
+.about-section-tag-start {
+  height: 100px;
 }
 
 .down-icon {
@@ -285,4 +283,45 @@ p {
   line-height: 30px;
   letter-spacing: -0.0525em;
   color: #fff;
+}
+
+
+.get-started {
+  background-color: #F9F9FA;
+}
+
+ul {
+  list-style: none;
+}
+
+#name,
+#email,
+textarea {
+  width: 340px;
+  height: 75px;
+  background-color: #FFFFFF;
+  border: 1px solid #DFDFE0;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 7px;
+  padding-left: 10px;
+  padding-bottom: 45px;
+}
+
+::placeholder {
+width: 200px;
+height: 15px;
+margin-top: 10px;
+padding-top: 10px;
+color: #7D7C84;
+}
+
+textarea {
+  height: 125px;
+  font-size: 15px;
+  line-height: 30px;
 }
