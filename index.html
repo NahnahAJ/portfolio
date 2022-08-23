@@ -189,19 +189,19 @@
         <ul>
           <li>
             <label for="name">
-              <input type="text" name="user-name" id="name" placeholder="Your name" maxlength="30" />
+              <input type="text" name="user-name" id="name" placeholder="Your name" maxlength="30" required>
             </label>
           </li>
           <li>
             <label for="email">
-              <input type="email" name="user-email" id="email" placeholder="Your email" required />
+              <input type="email" name="user-email" id="email" placeholder="Your email" required>
             </label>
           </li>
           <li>
-            <textarea placeholder="Enter your message here..." maxlength="500"></textarea>
+            <textarea name="message" placeholder="Enter your message here..." maxlength="500" required></textarea>
           </li>
           <li>
-            <button type="button" class="dark-bg-submit">Start collaboration</button>
+            <button type="submit" class="dark-bg-submit">Start collaboration</button>
           </li>
         </ul>
       </form>
