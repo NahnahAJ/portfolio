@@ -69,6 +69,7 @@ body {
   margin-top: 40px;
   padding-right: 64px;
   padding-left: 53px;
+  border-width: 1px;
 }
 
 .dark-bg-cv {
@@ -79,13 +80,19 @@ body {
   margin-top: 10px;
 }
 
-button:hover {
-  background-color: #272d3a;
+button:hover,
+button:active {
+  background-color: #fff;
+  color: #1a2236;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 button:active {
-  background-color: #7d7c84;
-  color: #1a2236;
+  border-width: 2px;
 }
 
 .body-display {
