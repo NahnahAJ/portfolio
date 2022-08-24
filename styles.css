@@ -81,7 +81,8 @@ body {
 }
 
 button:hover,
-button:active {
+button:active,
+.link:hover {
   background-color: #fff;
   color: #1a2236;
   font-family: "Poppins", sans-serif;
@@ -91,7 +92,12 @@ button:active {
   line-height: 27px;
 }
 
-button:active {
+.link:hover {
+  padding: 5px;
+}
+
+button:active,
+link:active {
   border-width: 2px;
 }
 
@@ -219,6 +225,10 @@ h4 {
   padding-top: 10px;
   padding-left: 8px;
 }
+
+/* .arrow-link:hover {
+color: #1a2236;
+} */
 
 .get-buttton {
   display: inline-flex;
