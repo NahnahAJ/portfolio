@@ -165,16 +165,34 @@ h4 {
   height: 16px;
 }
 
-.background-card {
+.background-card,
+.background-card-footer {
   background-color: #1a2236;
   width: 100%;
-  height: 200px;
   display: flex;
+  padding-top: 25px;
+  height: 200px;
+}
+
+.background-card {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   padding-left: 20px;
-  padding-top: 25px;
+
+}
+
+.background-card-footer {
+ display: inline-block;
+ color: #92DCDC;
+ font-family: 'Poppins', sans-serif;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 24px;
+ padding-left: 20px;
+ padding-top: 50px;
+ margin-top: 50px;
 }
 
 .link {
@@ -333,4 +351,20 @@ textarea {
   height: 125px;
   font-size: 15px;
   line-height: 30px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+  margin-left: -15px;
+}
+
+#footer-icon {
+margin-left: 15px;
+width: 25px;
+}
+
+.text-area {
+  display: flex;
 }
