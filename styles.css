@@ -191,7 +191,6 @@ h4 {
   line-height: 24px;
   padding-left: 20px;
   padding-top: 50px;
-  margin-top: 50px;
 }
 
 .link {
@@ -229,7 +228,6 @@ h4 {
   flex-direction: column;
   column-gap: 20em;
   padding: 25px;
-  margin-top: 70px;
 }
 
 .about-section-tag,
@@ -315,6 +313,8 @@ p {
 
 .get-started {
   background-color: #f9f9fa;
+  padding-bottom: 86px;
+  margin-top: 65px;
 }
 
 ul {
