@@ -80,6 +80,15 @@ body {
   margin-top: 10px;
 }
 
+.link {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
 button:hover,
 button:active,
 .link:hover {
@@ -206,15 +215,6 @@ h4 {
   padding-top: 50px;
 }
 
-.link {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-  color: #fff;
-}
-
 .arrow-link {
   display: flex;
   flex-direction: row;
@@ -225,10 +225,6 @@ h4 {
   padding-top: 10px;
   padding-left: 8px;
 }
-
-/* .arrow-link:hover {
-color: #1a2236;
-} */
 
 .get-buttton {
   display: inline-flex;
