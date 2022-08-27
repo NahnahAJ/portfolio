@@ -1,237 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <header>
+      <nav class="mobile-nav">
+        <img src="Images/ic_menu.svg" alt="Hamburger" />
+        <div class="desktop-nav">
+          <ul>
+            <li><a href="#">Hello</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav class="mobile-nav">
-      <img src="Images/ic_menu.svg" alt="Hamburger" />
-    </nav>
-  </header>
+    <section>
+      <div class="side-image">
+        <div class="body-display">
+          <h1 class="name-tag">
+            Nahnah<br />
+            Ahjuwah
+          </h1>
 
-  <section>
-    <div class="body-display">
-      <h1 class="name-tag">Nahnah Ahjuwah</h1>
+          <p class="about-tag">
+            Hello! I am a software developer! I can help you build a product,
+            feature or website. Taka a look of my works. If you like what you
+            see and have a project you need coded, don't hesitate and contact
+            me.
+          </p>
+          <button class="dark-bg" type="button">Start collaboration</button>
+        </div>
+        <div class="footer-image"></div>
+      </div>
+    </section>
 
-      <p class="about-tag">
-        Hello! I am a software developer! I can help you build a product,
-        feature or website. Taka a look of my works. If you like what you see
-        and have a project you need coded, don't hesitate and contact me.
-      </p>
+    <section>
+      <div class="grid-container">
+        <div class="about-container grid-item0">
+          <h2>Projects</h2>
+        </div>
+        <div class="grid-bg1"></div>
+        <div class="about-container grid-item1">
+          <img class="work1" src="works/work1.svg" alt="first project" />
+        </div>
 
-      <button class="dark-bg" type="button">Start collaboration</button>
-    </div>
-
-    <div class="footer-image"></div>
-  </section>
-
-  <section class="grid-container">
-    <div class="about-container">
-      <h2>Projects</h2>
-      <img class="work1" src="works/work1.svg" alt="first project" />
-
-      <div class="background-card">
-        <p class="project-name">Project name goes here</p>
-
-        <ul>
-          <li class="blue-bg">HTML/CSS</li>
-          <li class="blue-bg">Ruby on Rails</li>
-          <li class="blue-bg">Javascript</li>
-        </ul>
-        <div class="arrow-link">
+        <div class="background-card grid-item2">
+          <p class="project-name">Project name goes here</p>
+          <p class="desktop-name-2">Project name goes here</p>
+          <ul>
+            <li class="blue-bg">HTML/CSS</li>
+            <li class="blue-bg">Ruby on Rails</li>
+            <li class="blue-bg">Javascript</li>
+          </ul>
+          <div class="arrow-link">
             <a class="link" href="#">See this Project</a>
-          <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+          </div>
+          <div class="justify-btn">
+            <div class="desk-btn">
+              <a class="desk-a-tag" href="#">See this Project</a>
+              <img
+                class="arrow-icon"
+                src="icons/ic_arrow_right.svg"
+                alt="arrow"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="about-container grid-item3">
+          <img class="work1" src="works/work2.svg" alt="first project" />
+        </div>
+
+        <div class="background-card grid-item4">
+          <p class="project-name">Project name goes here</p>
+          <p class="desktop-name">Project name goes ...</p>
+
+          <ul>
+            <li class="blue-bg">HTML/CSS</li>
+            <li class="blue-bg">Ruby on Rails</li>
+            <li class="blue-bg remove">Javascript</li>
+            <li class="blue-bg-desktop">+1</li>
+          </ul>
+          <div class="arrow-link">
+            <a class="link" href="#">See this Project</a>
+            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+          </div>
+
+          <div class="justify-btn">
+            <div class="desk-btn">
+              <a class="desk-a-tag" href="#">See this Project</a>
+              <img
+                class="arrow-icon"
+                src="icons/ic_arrow_right.svg"
+                alt="arrow"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item-x"></div>
+        <div class="final-images"></div>
+        <div class="final-image2"></div>
+        <div class="card-bg-img">
+          <img src="Images/second-part-4.svg" alt="background-image" />
+        </div>
+        <div class="about-container grid-item5">
+          <img class="work1" src="works/work3.svg" alt="first project" />
+        </div>
+        <div class="grid-item-xi"></div>
+        <div class="background-card grid-item6">
+          <p class="project-name">Project name goes here</p>
+
+          <ul>
+            <li class="blue-bg">HTML/CSS</li>
+            <li class="blue-bg">Ruby on Rails</li>
+            <li class="blue-bg">Javascript</li>
+          </ul>
+          <div class="arrow-link">
+            <a class="link" href="#">See this Project</a>
+            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+          </div>
+        </div>
+
+        <div class="about-container grid-item7">
+          <img class="work1" src="works/work4.svg" alt="first project" />
+        </div>
+
+        <div class="background-card grid-item8">
+          <p class="project-name">Project name goes here</p>
+
+          <ul>
+            <li class="blue-bg">HTML/CSS</li>
+            <li class="blue-bg">Ruby on Rails</li>
+            <li class="blue-bg">Javascript</li>
+          </ul>
+          <div class="arrow-link">
+            <a class="link" href="#">See this Project</a>
+            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+          </div>
+        </div>
+
+        <div class="about-container grid-item9">
+          <img class="work1" src="works/work5.svg" alt="first project" />
+        </div>
+        <div class="image-geo-3"></div>
+
+        <div class="background-card grid-item10">
+          <p class="project-name">Project name goes here</p>
+
+          <ul>
+            <li class="blue-bg">HTML/CSS</li>
+            <li class="blue-bg">Ruby on Rails</li>
+            <li class="blue-bg">Javascript</li>
+          </ul>
+          <div class="arrow-link">
+            <a class="link" href="#">See this Project</a>
+            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="about-container">
-      <img class="work1" src="works/work2.svg" alt="first project" />
-      <div class="background-card">
-        <p class="project-name">Project name goes here</p>
-
-        <ul>
-          <li class="blue-bg">HTML/CSS</li>
-          <li class="blue-bg">Ruby on Rails</li>
-          <li class="blue-bg">Javascript</li>
-        </ul>
-        <div class="arrow-link">
-          <a class="link" href="#">See this Project</a>
-          <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
-        </div>
+    <section class="desktop-about-section">
+      <div class="about-section">
+        <h3>About</h3>
+        <p class="about-section-tag">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ea eiusmod
+        </p>
+        <button class="dark-bg-cv" type="button">
+          Get my CV<img
+            class="down-icon"
+            src="icons/ic_down.svg"
+            alt="arrow-down"
+          />
+        </button>
       </div>
-    </div>
 
-    <div class="about-container">
-      <img class="work1" src="works/work3.svg" alt="first project" />
-      <div class="background-card">
-        <p class="project-name">Project name goes here</p>
-
-        <ul>
-          <li class="blue-bg">HTML/CSS</li>
-          <li class="blue-bg">Ruby on Rails</li>
-          <li class="blue-bg">Javascript</li>
-        </ul>
-        <div class="arrow-link">
-          <a class="link" href="#">See this Project</a>
-          <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+      <div class="about-grid-container">
+        <div class="languages">
+          <p>Languages</p>
+          <ul class="list">
+            <li>Javascript (ES5/ES6)</li>
+            <li>Ruby</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
         </div>
-      </div>
-    </div>
 
-    <div class="about-container">
-      <img class="work1" src="works/work4.svg" alt="first project" />
-
-      <div class="background-card">
-        <p class="project-name">Project name goes here</p>
-
-        <ul>
-          <li class="blue-bg">HTML/CSS</li>
-          <li class="blue-bg">Ruby on Rails</li>
-          <li class="blue-bg">Javascript</li>
-        </ul>
-        <div class="arrow-link">
-          <a class="link" href="#">See this Project</a>
-          <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+        <div class="frameworks">
+          <p>Frameworks</p>
+          <ul class="list">
+            <li>Bootstrap</li>
+            <li>Ruby on rails</li>
+            <li>RSpec</li>
+            <li>Capibara</li>
+            <li>Selenium</li>
+          </ul>
         </div>
-      </div>
-    </div>
 
-    <div class="about-container">
-      <img class="work1" src="works/work5.svg" alt="first project" />
-
-      <div class="background-card">
-        <p class="project-name">Project name goes here</p>
-
-        <ul>
-          <li class="blue-bg">HTML/CSS</li>
-          <li class="blue-bg">Ruby on Rails</li>
-          <li class="blue-bg">Javascript</li>
-        </ul>
-        <div class="arrow-link">
-          <a class="link" href="#">See this Project</a>
-          <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+        <div class="skills">
+          <p>Skills</p>
+          <ul class="list">
+            <li>Codekit</li>
+            <li>Codepen</li>
+            <li>GitHub</li>
+            <li>GitLab</li>
+            <li>Terminal</li>
+          </ul>
         </div>
+        <div class="teal-bg"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="about-section">
-      <h3>About</h3>
-      <p class="about-section-tag">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ea eiusmod
-      </p>
-      <button class="dark-bg-cv" type="button">
-        Get my CV<img class="down-icon" src="icons/ic_down.svg" alt="arrow-down" />
-      </button>
-    </div>
+    <section>
+      <div class="about-section get-started">
+        <h4>Get started</h4>
+        <p class="about-section-tag-start">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna.
+        </p>
 
-    <div class="languages">
-      <p>Languages</p>
-      <ul class="list">
-        <li>Javascript (ES5/ES6)</li>
-        <li>Ruby</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-    </div>
+        <form action="https://formspree.io/f/xrgdbeqr" method="post">
+          <ul>
+            <li>
+              <label for="name1">
+                <input
+                  type="text"
+                  name="user-name"
+                  id="name1"
+                  placeholder="Your name"
+                  maxlength="30"
+                  required
+                />
+              </label>
+            </li>
+            <li>
+              <label for="email1">
+                <input
+                  type="email"
+                  name="user-email"
+                  id="email1"
+                  placeholder="Your email"
+                  required
+                />
+              </label>
+            </li>
+            <li>
+              <textarea
+                name="message"
+                placeholder="Enter your message here..."
+                maxlength="500"
+                required
+              ></textarea>
+            </li>
+            <li>
+              <button type="submit" class="dark-bg-submit">
+                Start collaboration
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
 
-    <div class="frameworks">
-      <p>Frameworks</p>
-      <ul class="list">
-        <li>Bootstrap</li>
-        <li>Ruby on rails</li>
-        <li>RSpec</li>
-        <li>Capibara</li>
-        <li>Selenium</li>
-      </ul>
-    </div>
-
-    <div class="skills">
-      <p>Skills</p>
-      <ul class="list">
-        <li>Codekit</li>
-        <li>Codepen</li>
-        <li>GitHub</li>
-        <li>GitLab</li>
-        <li>Terminal</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <div class="about-section get-started">
-      <h4>Get started</h4>
-      <p class="about-section-tag-start">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna.
-      </p>
+    <section class="final-section">
+      <div class="desktop-4">
+        <h4 class="desktop-header">Get started</h4>
+        <p class="desktop-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
 
       <form action="https://formspree.io/f/xrgdbeqr" method="post">
-        <ul>
-          <li>
-            <label for="name">
-              <input type="text" name="user-name" id="name" placeholder="Your name" maxlength="30" required />
+        <ul class="btm-grid">
+          <li class="btm-grid1">
+            <label for="name"
+              >Your name
+              <input
+                type="text"
+                name="user-name"
+                id="name"
+                placeholder="Your name"
+                maxlength="30"
+                required
+              />
             </label>
           </li>
-          <li>
-            <label for="email">
-              <input type="email" name="user-email" id="email" placeholder="Your email" required />
+          <li class="btm-grid2">
+            <label for="email"
+              >Your email
+              <input
+                type="email"
+                name="user-email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
             </label>
           </li>
-          <li>
-            <textarea name="message" placeholder="Enter your message here..." maxlength="500" required></textarea>
+          <li class="btm-grid3 btm-grid-flex">
+            <label for="message">Message</label>
+            <textarea
+            id="message"
+              name="message"
+              placeholder="Enter your message here..."
+              maxlength="500"
+              required
+            ></textarea>
           </li>
-          <li>
+          <li class="btm-grid4">
             <button type="submit" class="dark-bg-submit">
               Start collaboration
             </button>
           </li>
         </ul>
       </form>
-    </div>
-  </section>
-  <footer>
-    <div class="background-card-footer">
-      <div class="text-area">
-        <div>Get my Resume</div>
+    </section>
+
+    <footer>
+      <div class="background-card-footer">
+        <div class="text-area">
+          <div>Get my Resume</div>
+          <div>
+            <img
+              id="footer-icon"
+              src="icons/Union-final.svg"
+              alt="upwards-icon"
+            />
+          </div>
+        </div>
+
         <div>
-          <img id="footer-icon" src="icons/Union-final.svg" alt="upwards-icon" />
+          <ul class="icons-container">
+            <li>
+              <img src="icons/ic_stackoverflow.svg" alt="stackoverflow-icon" />
+            </li>
+            <li><img src="icons/ic_github.svg" alt="github-icon" /></li>
+            <li><img src="icons/ic_twitter.svg" alt="twitter-icon" /></li>
+            <li><img src="icons/ic_linkedin.svg" alt="linkedin-icon" /></li>
+            <li><img src="icons/ic_medium.svg" alt="medium-icon" /></li>
+            <li><img src="icons/ic_angellist.svg" alt="angellist-icon" /></li>
+          </ul>
         </div>
       </div>
-
-      <div>
-        <ul class="icons-container">
-          <li>
-            <img src="icons/ic_stackoverflow.svg" alt="stackoverflow-icon" />
-          </li>
-          <li><img src="icons/ic_github.svg" alt="github-icon" /></li>
-          <li><img src="icons/ic_twitter.svg" alt="twitter-icon" /></li>
-          <li><img src="icons/ic_linkedin.svg" alt="linkedin-icon" /></li>
-          <li><img src="icons/ic_medium.svg" alt="medium-icon" /></li>
-          <li><img src="icons/ic_angellist.svg" alt="angellist-icon" /></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
