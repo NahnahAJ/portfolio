@@ -339,8 +339,8 @@ ul {
   list-style: none;
 }
 
-#name,
-#email,
+#name, #name1,
+#email,#email1,
 textarea {
   width: 340px;
   height: 75px;
