@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,8 +24,9 @@
   <body>
     <header>
       <nav class="mobile-nav">
-        <img src="Images/ic_menu.svg" alt="Hamburger" />
-        <div class="desktop-nav">
+        <img class="hamburger" src="Images/ic_menu.svg" alt="Hamburger" />
+        <div class="desktop-nav  mobile-nav2">
+          <div class="close"><img src="./Images/menu-items-X.svg"></div>
           <ul class="animation">
             <li class="animation-1"><a href="#"><span>Hello</span></a></li>
             <li class="animation-1"><a href="#"><span>Portfolio</span></a></li>
@@ -73,10 +75,14 @@
             <li class="blue-bg">Ruby on Rails</li>
             <li class="blue-bg">Javascript</li>
           </ul>
-          <div class="arrow-link">
-            <a class="link" href="#">See this Project</a>
-            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
-          </div>
+          <!-- <div class="arrow-link"> -->
+            <!-- <a class="link" href="#">See this Project</a> -->
+            <div class="btn-container">
+              <div><button class="projects-btn">See this Project</button></div>
+              <div><img class="arrow-icon" src="icons/Union.svg" alt="arrow" /></div>
+            </div>
+            
+          <!-- </div> -->
           <div class="justify-btn">
             <div class="desk-btn">
               <a class="desk-a-tag" href="#">See this Project</a>

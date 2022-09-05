@@ -16,26 +16,26 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
 }
 
 .get-started,
 body {
   background: url("Images/image_geometry_1.png");
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .mobile-nav {
+  border: 1px solid saddlebrown;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 16px;
-  padding-top: 19px;
+  justify-content: center;
+  /* padding-top: 19px; */
 }
 
 .name-tag {
   width: 220px;
   height: 100px;
-  margin-top: 80px;
+  margin-top: 30%;
   margin-bottom: 0%;
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
@@ -82,6 +82,18 @@ body {
 
 .dark-bg-submit {
   margin-top: 10px;
+}
+.btn-container {
+  display: flex;
+}
+
+.projects-btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white-color);
+  background-color: var(--black-color);
 }
 
 .link {
@@ -205,7 +217,8 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  padding-left: 20px;
+  width: auto;
+  /* padding-left: 20px; */
 }
 
 .background-card-footer {
@@ -271,14 +284,19 @@ h4 {
   padding-left: 20px;
   width: 45px;
 }
+.about-grid-container {
+  display: grid;
+  gap: 20px;
+}
 
 .languages,
 .frameworks,
 .skills {
-  width: 100%;
+  width: 90%;
   height: 300px;
-  margin-left: 20px;
-  margin-bottom: 23px;
+  margin: auto;
+  /* margin-left: 20px;
+  margin-bottom: 23px; */
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -396,8 +414,43 @@ textarea {
   display: flex;
 }
 
-.desktop-nav ul {
+.hamburger {
+  position: absolute;
+  left: 88%;
+  top: 5%;
+}
+
+.desktop-nav {
   display: none;
+}
+
+.close {
+  position: absolute;
+  left: 88%;
+  top: 5%;
+}
+
+.mobile-nav2 {
+  /* display: none; */
+  display: flex;
+  height: 100vh;
+  border: 2px solid blue;
+  background-image: url(./Images/menu-items.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin: auto;
+}
+
+.desktop-nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--black-color);
 }
 
 .card-bg-img {
