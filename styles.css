@@ -33,7 +33,7 @@ body {
 .name-tag {
   width: 220px;
   height: 100px;
-  margin-top: 30%;
+  margin-top: 10%;
   margin-bottom: 0%;
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
@@ -958,12 +958,12 @@ textarea {
   }
 
   .animation-1:hover span {
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
   }
 
   .animation-1:hover::before {
     opacity: 1;
-    transform: scale(1, 1);
+    /* transform: scale(1, 1); */
   }
 
   .animation-1::after {
