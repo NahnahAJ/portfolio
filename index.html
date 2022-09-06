@@ -25,19 +25,27 @@
     <header>
       <nav class="mobile-nav">
         <img class="hamburger hamburger1" src="Images/ic_menu.svg" alt="Hamburger" />
-        <div class="desktop-nav mobile-nav2 hamburger1">
-          <div><img class="hamburger hamburger1 close" src="./Images/menu-items-X.svg"></div>
+        <div class="desktop-nav-main">
           <ul class="animation">
-            <li class="animation-1"><a href="#"><span>Hello</span></a></li>
-            <li class="animation-1"><a href="#"><span>Portfolio</span></a></li>
-            <li class="animation-1"><a href="#"><span>About</span></a></li>
-            <li class="animation-1"><a href="#"><span>Contact</span></a></li>
+            <li class="animation-1"><a href="#hello"><span>Hello</span></a></li>
+            <li class="animation-1"><a href="#portfolio"><span>Portfolio</span></a></li>
+            <li class="animation-1"><a href="#about"><span>About</span></a></li>
+            <li class="animation-1"><a href="#contact"><span>Contact</span></a></li>
+          </ul>
+        </div>
+        <div class="desktop-nav mobile-nav2 hamburger1">
+          <div><img class="close" src="./Images/menu-items-X.svg"></div>
+          <ul class="animation">
+            <li class="animation-1"><a href="#hello"><span>Hello</span></a></li>
+            <li class="animation-1"><a href="#portfolio"><span>Portfolio</span></a></li>
+            <li class="animation-1"><a href="#about"><span>About</span></a></li>
+            <li class="animation-1"><a href="#contact"><span>Contact</span></a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <section>
+    <section id="hello">
       <div class="side-image">
         <div class="body-display">
           <h1 class="name-tag">
@@ -57,7 +65,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="portfolio">
       <div class="grid-container">
         <div class="about-container grid-item0">
           <h2>Projects</h2>
@@ -189,7 +197,7 @@
       </div>
     </section>
 
-    <section class="desktop-about-section">
+    <section id="about" class="desktop-about-section">
       <div class="about-section">
         <h3>About</h3>
         <p class="about-section-tag">
@@ -243,7 +251,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="contact">
       <div class="about-section get-started">
         <h4>Get started</h4>
         <p class="about-section-tag-start">
