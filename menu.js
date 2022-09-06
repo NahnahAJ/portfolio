@@ -1,23 +1,24 @@
-let hamburger = document.querySelector(".hamburger1");
-let nav_menu = document.querySelector(".desktop-nav");
-let hamburger1 = document.querySelector("hamburger");
-let close = document.querySelector(".close")
+const hamburger = document.querySelector(".hamburger1");
+const navMenu = document.querySelector(".desktop-nav");
+// const hamburger1 = document.querySelector('hamburger');
+const close = document.querySelector(".close");
 
-hamburger.addEventListener('click', () => { 
-  nav_menu.classList.toggle("display");
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("display");
   hamburger.classList.toggle("hidden");
-  document.body.style.overflow = 'hidden';
-}); 
+  document.body.style.overflow = "hidden";
+});
 
-close.addEventListener('click', () => { 
-  nav_menu.classList.toggle("display");
-  hamburger.classList.toggle("hidden");
-  document.body.style.overflow = "auto";
-}); 
-
-document.querySelectorAll('.menu-link').forEach((n) => n.addEventListener('click', () => {
-  nav_menu.classList.toggle("display");
+close.addEventListener("click", () => {
+  navMenu.classList.toggle("display");
   hamburger.classList.toggle("hidden");
   document.body.style.overflow = "auto";
+});
 
-}))
+document.querySelectorAll(".menu-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    navMenu.classList.toggle("display");
+    hamburger.classList.toggle("hidden");
+    document.body.style.overflow = "auto";
+  })
+);

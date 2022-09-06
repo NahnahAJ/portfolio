@@ -16,7 +16,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 .get-started,
@@ -33,7 +32,7 @@ body {
 .name-tag {
   width: 220px;
   height: 100px;
-  margin-top: 10%;
+  margin-top: 30%;
   margin-bottom: 0%;
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
@@ -81,11 +80,10 @@ body {
 .dark-bg-submit {
   margin-top: 10px;
 }
+
 .btn-container {
   display: flex;
 }
-
-
 
 .link {
   font-family: "Poppins", sans-serif;
@@ -274,6 +272,7 @@ h4 {
   padding-left: 20px;
   width: 45px;
 }
+
 .about-grid-container {
   display: grid;
   gap: 20px;
@@ -402,20 +401,22 @@ textarea {
   display: flex;
 }
 
-.hamburger, .close {
+.hamburger,
+.close {
   position: absolute;
   left: 88%;
   top: 5%;
 }
 
-.desktop-nav, .desktop-nav-main {
+.desktop-nav,
+.desktop-nav-main {
   display: none;
 }
 
 .projects-btn {
   background-color: var(--black-color);
   color: var(--white-color);
-  border: 1px  solid var(--white-color);
+  border: 1px solid var(--white-color);
   width: 11rem;
   height: 3rem;
   font-family: var(--normal-font);
@@ -449,9 +450,10 @@ textarea {
   list-style: none;
   text-decoration: none;
   color: var(--black-color);
-} 
+}
 
-.card-bg-img, .desktop-btn-icon {
+.card-bg-img,
+.desktop-btn-icon {
   display: none;
 }
 
@@ -466,9 +468,11 @@ textarea {
 .final-section {
   display: none;
 }
+
 .hidden {
   display: none;
 }
+
 .hamburger1.display {
   display: flex;
 }
@@ -501,6 +505,7 @@ textarea {
 
   .name-tag {
     font-size: 110px;
+    margin-top: 10%;
     width: auto;
     height: auto;
   }
@@ -510,8 +515,8 @@ textarea {
     width: 30%;
   }
 
-
-  .mobile-nav img, .mobile-nav2 {
+  .mobile-nav img,
+  .mobile-nav2 {
     display: none;
   }
 
@@ -535,6 +540,7 @@ textarea {
     width: 15rem;
     height: 3rem;
   }
+
   .projects-btn:hover {
     background-color: var(--black-color);
     color: var(--white-color);
@@ -736,7 +742,8 @@ textarea {
     width: 370px;
   }
 
-  .get-started, .arrow-icon {
+  .get-started,
+  .arrow-icon {
     display: none;
   }
 
@@ -958,7 +965,7 @@ textarea {
   }
 
   .animation-1::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -977,16 +984,16 @@ textarea {
   }
 
   .animation-1:hover span {
-    /* letter-spacing: 2px; */
+    letter-spacing: 2px;
   }
 
   .animation-1:hover::before {
     opacity: 1;
-    /* transform: scale(1, 1); */
+    transform: scale(1, 1);
   }
 
   .animation-1::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
