@@ -14,3 +14,10 @@ close.addEventListener('click', () => {
   hamburger.classList.toggle("hidden");
   document.body.style.overflow = "auto";
 }); 
+
+document.querySelectorAll('.menu-link').forEach((n) => n.addEventListener('click', () => {
+  nav_menu.classList.toggle("display");
+  hamburger.classList.toggle("hidden");
+  document.body.style.overflow = "auto";
+
+}))
