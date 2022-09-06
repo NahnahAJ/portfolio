@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,19 +24,50 @@
   <body>
     <header>
       <nav class="mobile-nav">
-        <img src="Images/ic_menu.svg" alt="Hamburger" />
-        <div class="desktop-nav">
+        <img
+          class="hamburger hamburger1"
+          src="Images/ic_menu.svg"
+          alt="Hamburger"
+        />
+        <div class="desktop-nav-main">
           <ul class="animation">
-            <li class="animation-1"><a href="#"><span>Hello</span></a></li>
-            <li class="animation-1"><a href="#"><span>Portfolio</span></a></li>
-            <li class="animation-1"><a href="#"><span>About</span></a></li>
-            <li class="animation-1"><a href="#"><span>Contact</span></a></li>
+            <li class="animation-1">
+              <a href="#hello"><span>Hello</span></a>
+            </li>
+            <li class="animation-1">
+              <a href="#portfolio"><span>Portfolio</span></a>
+            </li>
+            <li class="animation-1">
+              <a href="#about"><span>About</span></a>
+            </li>
+            <li class="animation-1">
+              <a href="#contact"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="desktop-nav mobile-nav2 hamburger1">
+          <div>
+            <img class="close" alt="Close" src="./Images/menu-items-X.svg" />
+          </div>
+          <ul class="animation">
+            <li class="animation-1">
+              <a class="menu-link" href="#hello"><span>Hello</span></a>
+            </li>
+            <li class="animation-1">
+              <a class="menu-link" href="#portfolio"><span>Portfolio</span></a>
+            </li>
+            <li class="animation-1">
+              <a class="menu-link" href="#about"><span>About</span></a>
+            </li>
+            <li class="animation-1">
+              <a class="menu-link" href="#contact"><span>Contact</span></a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <section>
+    <section id="hello">
       <div class="side-image">
         <div class="body-display">
           <h1 class="name-tag">
@@ -55,7 +87,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="portfolio">
       <div class="grid-container">
         <div class="about-container grid-item0">
           <h2>Projects</h2>
@@ -73,18 +105,16 @@
             <li class="blue-bg">Ruby on Rails</li>
             <li class="blue-bg">Javascript</li>
           </ul>
-          <div class="arrow-link">
-            <a class="link" href="#">See this Project</a>
-            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
-          </div>
-          <div class="justify-btn">
-            <div class="desk-btn">
-              <a class="desk-a-tag" href="#">See this Project</a>
-              <img
-                class="arrow-icon"
-                src="icons/ic_arrow_right.svg"
-                alt="arrow"
-              />
+          <div class="btn-container">
+            <div>
+              <button class="projects-btn">
+                See this Project<img
+                  class="desktop-btn-icon"
+                  src="icons/ic_arrow_right.svg"
+                  alt="arrow"
+                />
+                <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+              </button>
             </div>
           </div>
         </div>
@@ -103,19 +133,16 @@
             <li class="blue-bg remove">Javascript</li>
             <li class="blue-bg-desktop">+1</li>
           </ul>
-          <div class="arrow-link">
-            <a class="link" href="#">See this Project</a>
-            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
-          </div>
-
-          <div class="justify-btn">
-            <div class="desk-btn">
-              <a class="desk-a-tag" href="#">See this Project</a>
-              <img
-                class="arrow-icon"
-                src="icons/ic_arrow_right.svg"
-                alt="arrow"
-              />
+          <div class="btn-container">
+            <div>
+              <button class="projects-btn" type="button">
+                See this Project<img
+                  class="desktop-btn-icon"
+                  src="icons/ic_arrow_right.svg"
+                  alt="arrow"
+                />
+                <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+              </button>
             </div>
           </div>
         </div>
@@ -138,9 +165,17 @@
             <li class="blue-bg">Ruby on Rails</li>
             <li class="blue-bg">Javascript</li>
           </ul>
-          <div class="arrow-link">
-            <a class="link" href="#">See this Project</a>
-            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+          <div class="btn-container">
+            <div>
+              <button class="projects-btn">
+                See this Project<img
+                  class="desktop-btn-icon"
+                  src="icons/ic_arrow_right.svg"
+                  alt="arrow"
+                />
+                <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+              </button>
+            </div>
           </div>
         </div>
 
@@ -156,9 +191,17 @@
             <li class="blue-bg">Ruby on Rails</li>
             <li class="blue-bg">Javascript</li>
           </ul>
-          <div class="arrow-link">
-            <a class="link" href="#">See this Project</a>
-            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+          <div class="btn-container">
+            <div>
+              <button class="projects-btn">
+                See this Project<img
+                  class="desktop-btn-icon"
+                  src="icons/ic_arrow_right.svg"
+                  alt="arrow"
+                />
+                <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+              </button>
+            </div>
           </div>
         </div>
 
@@ -175,15 +218,23 @@
             <li class="blue-bg">Ruby on Rails</li>
             <li class="blue-bg">Javascript</li>
           </ul>
-          <div class="arrow-link">
-            <a class="link" href="#">See this Project</a>
-            <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+          <div class="btn-container">
+            <div>
+              <button class="projects-btn">
+                See this Project<img
+                  class="desktop-btn-icon"
+                  src="icons/ic_arrow_right.svg"
+                  alt="arrow"
+                />
+                <img class="arrow-icon" src="icons/Union.svg" alt="arrow" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="desktop-about-section">
+    <section id="about" class="desktop-about-section">
       <div class="about-section">
         <h3>About</h3>
         <p class="about-section-tag">
@@ -237,7 +288,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="contact">
       <div class="about-section get-started">
         <h4>Get started</h4>
         <p class="about-section-tag-start">
@@ -329,7 +380,7 @@
           <li class="btm-grid3 btm-grid-flex">
             <label for="message">Message</label>
             <textarea
-            id="message"
+              id="message"
               name="message"
               placeholder="Enter your message here..."
               maxlength="500"
@@ -372,5 +423,6 @@
         </div>
       </div>
     </footer>
+    <script src="menu.js"></script>
   </body>
 </html>
