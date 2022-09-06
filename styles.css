@@ -85,14 +85,7 @@ body {
   display: flex;
 }
 
-.projects-btn {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  color: var(--white-color);
-  background-color: var(--black-color);
-}
+
 
 .link {
   font-family: "Poppins", sans-serif;
@@ -419,6 +412,15 @@ textarea {
   display: none;
 }
 
+.projects-btn {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: 1px  solid var(--white-color);
+  width: 11rem;
+  height: 3rem;
+  font-family: var(--normal-font);
+  font-size: 1rem;
+}
 
 .mobile-nav2 {
   justify-content: center;
@@ -449,7 +451,7 @@ textarea {
   color: var(--black-color);
 } 
 
-.card-bg-img {
+.card-bg-img, .desktop-btn-icon {
   display: none;
 }
 
@@ -520,6 +522,23 @@ textarea {
     background-color: var(--white-color);
     margin: 0%;
     padding: 0%;
+  }
+
+  .projects-btn {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border: none;
+    width: 15rem;
+    height: 3rem;
+  }
+  .projects-btn:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
   }
 
   .desktop-nav-main {
@@ -717,7 +736,7 @@ textarea {
     width: 370px;
   }
 
-  .get-started {
+  .get-started, .arrow-icon {
     display: none;
   }
 
