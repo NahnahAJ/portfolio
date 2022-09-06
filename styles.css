@@ -424,15 +424,10 @@ textarea {
   display: none;
 }
 
-.close {
-  position: absolute;
-  left: 88%;
-  top: 5%;
-}
 
 .mobile-nav2 {
   /* display: none; */
-  display: flex;
+  /* display: flex; */
   height: 100vh;
   border: 2px solid blue;
   background-image: url(./Images/menu-items.svg);
@@ -451,7 +446,7 @@ textarea {
   list-style: none;
   text-decoration: none;
   color: var(--black-color);
-}
+} 
 
 .card-bg-img {
   display: none;
@@ -467,6 +462,12 @@ textarea {
 
 .final-section {
   display: none;
+}
+.hidden {
+  display: none;
+}
+.hamburger1.display {
+  display: flex;
 }
 
 @media (min-width: 768px) {
@@ -506,9 +507,6 @@ textarea {
     width: 30%;
   }
 
-  /* .dark-bg {
-
- }  */
 
   .mobile-nav img {
     display: none;
