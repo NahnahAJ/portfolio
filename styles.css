@@ -229,6 +229,7 @@ h4 {
   pointer-events: none;
   opacity: 0;
 }
+
 .popUp-window {
   position: fixed;
   top: 50%;
@@ -246,6 +247,7 @@ h4 {
   opacity: 0;
   overflow: scroll;
 }
+
 .active {
   opacity: 1;
   pointer-events: all;
@@ -1126,9 +1128,8 @@ textarea {
     opacity: 0;
     transform: scale(0.1, 1);
   }
-}
 
-.popUp-window {
+  .popUp-window {
     width: 90vw;
     height: 90vh;
   }
@@ -1191,3 +1192,4 @@ textarea {
     left: 60rem;
     top: -0.5rem;
   }
+}

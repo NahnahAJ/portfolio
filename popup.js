@@ -39,7 +39,7 @@ div.innerHTML = `<div class="head-popup"><h1 class="popup-projectName">${works[0
 <img class="workOne" alt="first project" src="${works[0].featuredImage}"><p class="popUp-tag">${works[0].projectDescription}</p>
 <button class="popUp-btn">See Live<img class="p-icons" alt="github-icon" src="./popup/ic_link.svg"></button>
 <button class="popUp-btn">See source<img class="p-icons" alt="github-icon"src="./popup/ic_github_white.svg"></button>
-<button class="prev-btn">Previous project</button><button class="next-btn">Next project &#8594;</button>`;
+<button class="prev-btn">&#8592;Previous project</button><button class="next-btn">Next project &#8594;</button>`;
 body.append(div);
 
 const overlay = document.createElement('div');
@@ -51,7 +51,7 @@ const overlayNew = document.querySelector('.overlay');
 const modalContainer = document.querySelector('.popUp-window');
 
 for (let i = 0; i < portfolioBtn.length; i += 1) {
-  portfolioBtn[i].addEventListener('click', e => {
+  portfolioBtn[i].addEventListener('click', () => {
     modalContainer.classList.add('active');
     overlayNew.classList.add('active')
   });
@@ -59,7 +59,7 @@ for (let i = 0; i < portfolioBtn.length; i += 1) {
 
 const closeModalButton = document.querySelectorAll('.close-btn');
 for (let i = 0; i < closeModalButton.length; i += 1) {
-  closeModalButton[i].addEventListener('click', e => {
+  closeModalButton[i].addEventListener('click', ()=> {
     modalContainer.classList.remove('active');
     overlayNew.classList.remove('active')
   });
