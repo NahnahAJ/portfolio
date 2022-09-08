@@ -1127,3 +1127,26 @@ textarea {
     transform: scale(0.1, 1);
   }
 }
+
+.popUp-window {
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .head-popup {
+    padding: 3rem;
+    font-family: var(--normal-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80%;
+  }
+
+  .popup-lang {
+    font-size: 15px;
+    padding: 1rem;
+    position: relative;
+    left: 3rem;
+  }
+
+  
