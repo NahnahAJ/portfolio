@@ -1149,4 +1149,45 @@ textarea {
     left: 3rem;
   }
 
-  
+  .workOne {
+    padding: 1rem 3rem;
+  }
+
+  .popUp-tag {
+    width: 50vw;
+    text-align: left;
+    padding: 3rem;
+    position: relative;
+    left: 15rem;
+  }
+
+  .popUp-btn {
+    position: relative;
+    left: 18rem;
+    margin-left: 1rem;
+  }
+
+  .prev-btn,
+  .next-btn {
+    display: block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    top: -2rem;
+    font-size: 1rem;
+    font-weight: 1rem;
+  }
+
+  .prev-btn {
+    position: relative;
+    top: 0.5rem;
+    left: 18rem;
+  }
+
+  .next-btn {
+    position: relative;
+    left: 60rem;
+    top: -0.5rem;
+  }
