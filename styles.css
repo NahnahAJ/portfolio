@@ -254,7 +254,7 @@ h4 {
 }
 
 .workOne {
-  width: 86vw;
+  width: 100vw;
 }
 
 .popUp-tag {
@@ -1191,5 +1191,59 @@ textarea {
     position: relative;
     left: 60rem;
     top: -0.5rem;
+  }
+
+  .workscard {
+    display: none;
+  }
+
+  .desktop-projects {
+    background-image: url(./dimages/desktop-bg-full.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220vh;
+  }
+
+  .project-desktop {
+    position: absolute;
+    left: 58rem;
+    top: 113rem;
+    overflow: hidden;
+  }
+
+  .project-desktop .project-name {
+    width: 24rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .project-desktop .project-name,
+  .project-desktop-2 .project-name {
+    display: inline-block;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .project-desktop-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    left: 31rem;
+    top: 93rem;
+    width: 50rem;
+  }
+
+  .project-desktop-2 .project-name {
+    font-size: 3.5rem;
+    font-weight: 600;
+    width: 50rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-desktop-2 .blue-bg {
+    width: 8rem;
+    font-size: 1rem;
+    margin-right: 1rem;
   }
 }
