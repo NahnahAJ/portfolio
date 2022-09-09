@@ -167,7 +167,8 @@ h4 {
   padding-top: 50px;
 }
 
-.blue-bg {
+.blue-bg,
+.popup-lang {
   text-decoration: none;
   display: inline-block;
   background-color: #98dede;
@@ -180,16 +181,138 @@ h4 {
   margin-bottom: 15px;
   margin-right: 5px;
   line-height: 80%;
-  color: #1a2236;
+  color: var(--black-color);
+}
+
+.popup-projectName {
+  color: var(--black-color);
+  height: fit-content;
+  display: flex;
+  font-weight: 600;
+}
+
+.popup-lang {
+  background-color: var(--white-color);
+  border: 1px solid var(--black-color);
+}
+
+.head-popup {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 1rem;
+}
+
+.close-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  position: relative;
+  top: -2rem;
+  font-size: 2.5rem;
+  font-weight: 1rem;
+}
+
+.close-btn:hover {
+  font-size: 2.5rem;
+}
+
+.overlay {
+  position: fixed;
+  transition: 200ms ease-in-out;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #1a2236;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.popUp-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 200ms ease-in-out;
+  border: 1px solid var(--blue-color);
+  border-radius: 10px;
+  z-index: 20;
+  background-color: var(--white-color);
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  pointer-events: none;
+  opacity: 0;
+  overflow: scroll;
+}
+
+.workOne {
+  width: 100vw;
+}
+
+.popUp-window .workOne {
+  width: 86vw;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.popUp-tag {
+  margin-top: 20px;
+  width: 86vw;
+  height: 65%;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: var(--black-color);
 }
 
 .project-name {
+  color: var(--white-color);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.popUp-btn {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 80%;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--black-color);
+  width: 17rem;
+  height: 4rem;
+  position: relative;
+  left: 2rem;
+  bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.popUp-btn:hover {
+  background-color: var(--black-color);
   color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+.p-icons {
+  position: relative;
+  left: 3rem;
+  top: 0.3rem;
+}
+
+.project-name,
+.popup-projectName {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  line-height: 80%;
   height: 16px;
 }
 
@@ -469,12 +592,19 @@ textarea {
   display: none;
 }
 
-.hidden {
+.hidden,
+.prev-btn,
+.next-btn {
   display: none;
 }
 
 .hamburger1.display {
   display: flex;
+}
+
+.project-desktop-2,
+.project-desktop {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -1006,5 +1136,124 @@ textarea {
   .animation-1:hover::after {
     opacity: 0;
     transform: scale(0.1, 1);
+  }
+
+  .popUp-window {
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .head-popup {
+    padding: 3rem;
+    font-family: var(--normal-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80%;
+  }
+
+  .popup-lang {
+    font-size: 15px;
+    padding: 1rem;
+    position: relative;
+    left: 3rem;
+  }
+
+  .workOne {
+    padding: 1rem 3rem;
+  }
+
+  .popUp-tag {
+    width: 50vw;
+    text-align: left;
+    padding: 3rem;
+    position: relative;
+    left: 15rem;
+  }
+
+  .popUp-btn {
+    position: relative;
+    left: 18rem;
+    margin-left: 1rem;
+  }
+
+  .prev-btn,
+  .next-btn {
+    display: block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    top: -2rem;
+    font-size: 1rem;
+    font-weight: 1rem;
+  }
+
+  .prev-btn {
+    position: relative;
+    top: 0.5rem;
+    left: 18rem;
+  }
+
+  .next-btn {
+    position: relative;
+    left: 60rem;
+    top: -0.5rem;
+  }
+
+  .workscard {
+    display: none;
+  }
+
+  .desktop-projects {
+    background-image: url(./dimages/desktop-bg-full.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220vh;
+  }
+
+  .project-desktop {
+    position: absolute;
+    display: block;
+    left: 58rem;
+    top: 113rem;
+    overflow: hidden;
+  }
+
+  .project-desktop .project-name {
+    width: 24rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .project-desktop .project-name,
+  .project-desktop-2 .project-name {
+    display: inline-block;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .project-desktop-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    left: 31rem;
+    top: 93rem;
+    width: 50rem;
+  }
+
+  .project-desktop-2 .project-name {
+    font-size: 3.5rem;
+    font-weight: 600;
+    width: 50rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-desktop-2 .blue-bg {
+    width: 8rem;
+    font-size: 1rem;
+    margin-right: 1rem;
   }
 }
