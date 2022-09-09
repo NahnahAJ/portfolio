@@ -248,6 +248,10 @@ h4 {
   overflow: scroll;
 }
 
+.popUp-window .workOne {
+  width: 86vw;
+}
+
 .active {
   opacity: 1;
   pointer-events: all;
@@ -260,7 +264,7 @@ h4 {
 .popUp-tag {
   margin-top: 20px;
   width: 86vw;
-  height: 55%;
+  height: 65%;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -596,6 +600,11 @@ textarea {
 
 .hamburger1.display {
   display: flex;
+}
+
+.project-desktop-2,
+.project-desktop {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -1206,6 +1215,7 @@ textarea {
 
   .project-desktop {
     position: absolute;
+    display: block;
     left: 58rem;
     top: 113rem;
     overflow: hidden;
