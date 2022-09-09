@@ -53,14 +53,14 @@ const modalContainer = document.querySelector('.popUp-window');
 for (let i = 0; i < portfolioBtn.length; i += 1) {
   portfolioBtn[i].addEventListener('click', () => {
     modalContainer.classList.add('active');
-    overlayNew.classList.add('active')
+    overlayNew.classList.add('active');
   });
 }
 
 const closeModalButton = document.querySelectorAll('.close-btn');
 for (let i = 0; i < closeModalButton.length; i += 1) {
-  closeModalButton[i].addEventListener('click', ()=> {
+  closeModalButton[i].addEventListener('click', () => {
     modalContainer.classList.remove('active');
-    overlayNew.classList.remove('active')
+    overlayNew.classList.remove('active');
   });
 }
