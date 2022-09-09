@@ -248,6 +248,10 @@ h4 {
   overflow: scroll;
 }
 
+.workOne {
+  width: 100vw;
+}
+
 .popUp-window .workOne {
   width: 86vw;
 }
@@ -255,10 +259,6 @@ h4 {
 .active {
   opacity: 1;
   pointer-events: all;
-}
-
-.workOne {
-  width: 100vw;
 }
 
 .popUp-tag {
