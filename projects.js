@@ -1,4 +1,6 @@
-// const body = document.querySelector("#portfolio");
+const projectSection = document.querySelector(".projectsContainer");
+const popUpWindow = document.querySelector(".popUps");
+const overlay = document.querySelector(".overlay");
 const works = [
   {
     id: 1,
@@ -62,82 +64,53 @@ const works = [
   },
 ];
 
+const allProjects = document.createElement("div");
+allProjects.className = "everyProject";
 let worksCard = "";
-works.forEach((eachWork) => {
-  worksCard = `${worksCard}<img class ="workOne"src=${eachWork.featuredImage} alt="works">
-<div class="background-card">
-<p class="project-name">${eachWork.projectName}</p>
-<p class="desktop-name-2">${eachWork.projectName}</p>
-<ul>
-<li class="blue-bg">${eachWork.technologies[0]}</li>
-<li class="blue-bg">${eachWork.technologies[1]}</li>
-<li class="blue-bg">${eachWork.technologies[2]}</li>
-</ul>
-<div class="btn-container">
-<div>
-<button class="projects-btn" id=${eachWork.id}>See this Project<img class="desktop-btn-icon" src="icons/ic_arrow_right.svg"  alt="arrow"><img class="arrow-icon" src="icons/Union.svg" alt="arrow">
-</button>
-</div>
-</div>
-</div>`;
-  // const modalContainer = document.getElementById(`${eachWork.id}`);
-  // console.log(modalContainer);
-});
-
-const dynamicSection = document.createElement("div");
-dynamicSection.className = "workscard";
-dynamicSection.innerHTML = worksCard;
-body.appendChild(dynamicSection);
-
-let popUpWindowCard = "";
-const popUpWindow = document.createElement("div");
-popUpWindow.className = "popUp-window";
 works.forEach((work) => {
-  popUpWindowCard = `<div class="head-popup" id=${work.id}>
-  <h1 class="popup-projectName">${work.projectName}</h1>
-  <button type="submit" class="close-btn">&times;</button>
-  <ul>
-  <li class="popup-lang">${work.technologies[0]}</li>
-  <li class="popup-lang">${work.technologies[1]}</li>
-  <li class="popup-lang">${work.technologies[2]}</li>
-  </ul>
-<img class="workOne" alt="first project" src=${work.featuredImage}><p class="popUp-tag">${work.projectDescription}</p>
-<button class="popUp-btn">See Live<img class="p-icons" alt="github-icon" src="./popup/ic_link.svg"></button>
-<button class="popUp-btn">See source<img class="p-icons" alt="github-icon"src="./popup/ic_github_white.svg"></button>
-<button class="prev-btn">&#8592;Previous project</button><button class="next-btn">Next project &#8594;</button>
-  </div>`;
-  const modalContainer = document.getElementById(`${work.id}`);
-  console.log(modalContainer);
-  modalContainer.addEventListener('click', () => {
-    console.log(work.id);
-        popUpWindow.classList.add('active');
-    overlayNew.classList.add('active');
-  })
+  worksCard = `${worksCard}<div class=mainProjectContainer>
+    <img class src=${work.featuredImage} alt="works">
+    <p class="project-name">${work.projectName}</p>
+<p class="desktop-name-2">${work.projectName}</p>
+<ul>
+<li class="blue-bg">${work.technologies[0]}</li>
+<li class="blue-bg">${work.technologies[1]}</li>
+<li class="blue-bg">${work.technologies[2]}</li>
+</ul>
+<button class="projects-btn" id=${work.id}>See this Project<img class="desktop-btn-icon" src="icons/ic_arrow_right.svg"  alt="arrow"><img class="arrow-icon" src="icons/Union.svg" alt="arrow">
+</button>
+    </div>
+    `;
+  allProjects.innerHTML = worksCard;
+  projectSection.append(allProjects);
+  const buttonIds = document.querySelectorAll(".projects-btn");
+  buttonIds.forEach((id) => {
+    id.addEventListener("click", (e) => {
+      modalCreator(e.target.id);
+    });
+  });
 });
-popUpWindow.innerHTML = popUpWindowCard;
-body.append(popUpWindow);
 
-const overlay = document.createElement("div");
-overlay.className = "overlay";
-body.appendChild(overlay);
+const modalCreator = (id) => {
+  const allPopups = document.createElement("div");
+  allPopups.className = "everyPopup";
+  let popUpsCard = "";
+  popUpsCard = `<div class="mainPopupContainer overlay">
+  <button class="close-modal">&times;</button>
+      <img class src=${works[id - 1].featuredImage} alt="works">
+      <p>${works[id - 1].projectName}</p>
+  </div>
+      `;
+  allPopups.innerHTML = popUpsCard;
+  popUpWindow.append(allPopups);
 
-const portfolioBtn = document.querySelectorAll(".projects-btn");
-const overlayNew = document.querySelector(".overlay");
-const modalContainer = document.getElementById(works.id);
+  const closebtn = document.querySelectorAll(".close-modal");
+  const modal = document.querySelector(".mainPopupContainer");
+  closebtn.forEach((button) => {
+    button.addEventListener('click', () => {
+      allPopups.classList.add('hidden');
+    })    
+  })
+};
 
-for (let i = 0; i < portfolioBtn.length; i += 1) {
-  if (portfolioBtn[i].id) {
-     portfolioBtn[i].addEventListener('click', () => {
-    modalContainer.classList.add('active');
-    overlayNew.classList.add('active');
-  });
-  }
-}
 
-const closeModalButton = document.querySelectorAll('.close-btn');
-for (let i = 0; i < closeModalButton.length; i += 1) {
-  closeModalButton[i].addEventListener('click', () => {
-    modalContainer.classList.remove('active');
-    overlayNew.classList.remove('active');
-  });
-}
