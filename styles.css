@@ -75,6 +75,7 @@ body {
 
 .dark-bg-cv {
   padding-bottom: 6px;
+  margin-top: 5rem;
 }
 
 .dark-bg-submit {
@@ -167,8 +168,7 @@ h4 {
   padding-top: 50px;
 }
 
-.blue-bg,
-.popup-lang {
+.blue-bg {
   text-decoration: none;
   display: inline-block;
   background-color: #98dede;
@@ -182,25 +182,6 @@ h4 {
   margin-right: 5px;
   line-height: 80%;
   color: var(--black-color);
-}
-
-.popup-projectName {
-  color: var(--black-color);
-  height: fit-content;
-  display: flex;
-  font-weight: 600;
-}
-
-.popup-lang {
-  background-color: var(--white-color);
-  border: 1px solid var(--black-color);
-}
-
-.head-popup {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: 1rem;
 }
 
 .close-btn {
@@ -218,60 +199,9 @@ h4 {
   font-size: 2.5rem;
 }
 
-.overlay {
-  position: fixed;
-  transition: 200ms ease-in-out;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: #1a2236;
-  pointer-events: none;
-  opacity: 0;
-}
-
-.popUp-window {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 200ms ease-in-out;
-  border: 1px solid var(--blue-color);
-  border-radius: 10px;
-  z-index: 20;
-  background-color: var(--white-color);
-  width: 100%;
-  height: 100vh;
-  padding: 1rem;
-  pointer-events: none;
-  opacity: 0;
-  overflow: scroll;
-}
-
-.workOne {
-  width: 100vw;
-}
-
-.popUp-window .workOne {
-  width: 86vw;
-}
-
 .active {
   opacity: 1;
   pointer-events: all;
-}
-
-.popUp-tag {
-  margin-top: 20px;
-  width: 86vw;
-  height: 65%;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.01em;
-  color: var(--black-color);
 }
 
 .project-name {
@@ -280,40 +210,10 @@ h4 {
   font-weight: 300;
 }
 
-.popUp-btn {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--black-color);
-  background-color: var(--white-color);
-  border: 1px solid var(--black-color);
-  width: 17rem;
-  height: 4rem;
-  position: relative;
-  left: 2rem;
-  bottom: 2rem;
-  margin-bottom: 2.5rem;
-}
-
-.popUp-btn:hover {
-  background-color: var(--black-color);
-  color: var(--white-color);
-  border: 1px solid var(--white-color);
-}
-
 .p-icons {
   position: relative;
   left: 3rem;
   top: 0.3rem;
-}
-
-.project-name,
-.popup-projectName {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  line-height: 80%;
-  height: 16px;
 }
 
 .background-card,
@@ -553,7 +453,7 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .mobile-nav2 ul li {
@@ -602,11 +502,111 @@ textarea {
   display: flex;
 }
 
-.project-desktop-2,
+.projectImg {
+  display: block;
+  width: -webkit-fill-available;
+}
+
+.projectsBackground {
+  background-color: var(--black-color);
+  padding: 1rem;
+}
+
+/* .project-desktop-2,
 .project-desktop {
   display: none;
 }
 
+.show {
+  display: block;
+} */
+
+/* MODAL STYLES */
+
+.mainPopupContainer {
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background-color: white;
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal {
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.popUp-title {
+  color: black;
+  padding-bottom: 0.2rem;
+}
+
+.seeLiveBtn,
+.seeSourceBtn {
+  border: 1px solid black;
+  background-color: #fff;
+  display: block;
+
+  /* margin: 0 auto; */
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 1rem 3.5rem;
+  margin: 1rem 2rem;
+}
+
+.faIcons {
+  padding-left: 3rem;
+}
+
+.faIcon2 {
+  padding-left: 1rem;
+}
+
+.popUp-btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  line-height: 80%;
+  color: var(--black-color);
+  border: 1px solid var(--black-color);
+}
+
+.popUp-text {
+  color: #1a2236;
+  text-align: left;
+  padding: 1rem 0;
+  font-weight: 200;
+}
+
+/* DESKTOP STYLES WITH MEDIA QUERIES */
 @media (min-width: 768px) {
   body {
     background: none;
@@ -1136,45 +1136,6 @@ textarea {
   .animation-1:hover::after {
     opacity: 0;
     transform: scale(0.1, 1);
-  }
-
-  .popUp-window {
-    width: 90vw;
-    height: 90vh;
-  }
-
-  .head-popup {
-    padding: 3rem;
-    font-family: var(--normal-font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 80%;
-  }
-
-  .popup-lang {
-    font-size: 15px;
-    padding: 1rem;
-    position: relative;
-    left: 3rem;
-  }
-
-  .workOne {
-    padding: 1rem 3rem;
-  }
-
-  .popUp-tag {
-    width: 50vw;
-    text-align: left;
-    padding: 3rem;
-    position: relative;
-    left: 15rem;
-  }
-
-  .popUp-btn {
-    position: relative;
-    left: 18rem;
-    margin-left: 1rem;
   }
 
   .prev-btn,
