@@ -260,11 +260,6 @@ h4 {
   flex-direction: row;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 390px;
-}
-
 .about-section {
   display: flex;
   flex-direction: column;
@@ -512,15 +507,6 @@ textarea {
   padding: 1rem;
 }
 
-/* .project-desktop-2,
-.project-desktop {
-  display: none;
-}
-
-.show {
-  display: block;
-} */
-
 /* MODAL STYLES */
 
 .mainPopupContainer {
@@ -607,12 +593,17 @@ textarea {
 }
 
 /* DESKTOP STYLES WITH MEDIA QUERIES */
+
 @media (min-width: 768px) {
   body {
     background: none;
   }
 
-  .footer-image {
+  .mainProjectContainer,
+  .footer-image,
+  .mobile-nav img,
+  .mobile-nav2,
+  .about-container {
     display: none;
   }
 
@@ -633,6 +624,88 @@ textarea {
     list-style: disc;
   }
 
+  .desktop-projects-section {
+    background-image: url("works/Group121.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .arrangeDesktopWorks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 16.35rem 17rem 20rem 30rem;
+    height: 225vh;
+  }
+
+  .rotatedHeading {
+    margin-top: 15rem;
+    transform: rotate(270deg);
+    grid-column: 1/2;
+  }
+
+  .work1 {
+    width: -webkit-fill-available;
+    height: 30rem;
+    grid-row: 1/2;
+    grid-column: 2/4;
+  }
+
+  .desktopDark-bg {
+    background-color: #1a2236;
+    padding: 8rem;
+    grid-row: 2/3;
+    grid-column: 2/4;
+  }
+
+  .work2 {
+    margin-top: 3.5rem;
+    width: 27rem;
+    grid-row: 3/4;
+  }
+
+  .work3 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 26rem;
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+
+  .work4 {
+    margin-top: 0.9rem;
+    width: 48rem;
+    height: 28rem;
+    grid-row: 4/5;
+    grid-column: 1/3;
+  }
+
+  .work5 {
+    grid-row: 5/6;
+    grid-column: 3/4;
+    width: 28rem;
+    margin-left: -8.5rem;
+    margin-top: -1rem;
+  }
+
+  .work6 {
+    width: 26rem;
+  }
+
+  .overlay-project {
+    margin-left: -1.7rem;
+    position: absolute;
+    z-index: 4;
+    top: 110rem;
+    left: 60rem;
+  }
+
+  .second-desktopDarkBg {
+    background-color: #1a2236;
+    padding: 2rem;
+
+    /* padding-top: 5rem; */
+  }
+
   .name-tag {
     font-size: 110px;
     margin-top: 10%;
@@ -643,11 +716,6 @@ textarea {
   .about-tag {
     padding-top: 2%;
     width: 30%;
-  }
-
-  .mobile-nav img,
-  .mobile-nav2 {
-    display: none;
   }
 
   .mobile-nav {
@@ -695,124 +763,6 @@ textarea {
     padding: 1rem;
     font-size: 16px;
     display: block;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 190px 350px 350px 350px auto;
-  }
-
-  .grid-item0 {
-    transform: rotate(-90deg);
-    align-self: center;
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-
-  .grid-bg1 {
-    background-image: url("Images/image_dots.svg");
-    grid-column: 2 /3;
-    grid-row: 1/2;
-  }
-
-  .grid-item1 {
-    grid-column: 3 / 7;
-  }
-
-  .grid-item2 {
-    grid-column: span 4 / 7;
-    height: 340px;
-  }
-
-  .grid-item3 {
-    grid-column: 1/3;
-    grid-row: 3/4;
-    padding-top: 11%;
-  }
-
-  .card-bg-img {
-    display: grid;
-    grid-column: 5 / 7;
-    grid-row: 3 / 4;
-  }
-
-  .grid-item4 {
-    grid-column: 5/7;
-    grid-row: 4/5;
-    margin-top: -65%;
-    z-index: 1;
-  }
-
-  .grid-item-x {
-    display: grid;
-    background: url("Images/second-part.svg");
-    background-repeat: no-repeat;
-    background-position: contain;
-    background-size: contain;
-    grid-column: 3/5;
-    grid-row: 3/4;
-  }
-
-  .grid-item5 {
-    grid-column: 1/4;
-    grid-row: 4/5;
-    margin-top: -6%;
-    height: 100vh;
-  }
-
-  .grid-item9 {
-    margin-top: -21%;
-    grid-column: 5 / 7;
-    grid-row: 4 / 5;
-  }
-
-  .image-geo-3 {
-    display: grid;
-    background-image: url("Images/second-part-2.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 25%;
-    grid-column: 4 / 7;
-    grid-row: 4 / 5;
-  }
-
-  .grid-item6,
-  .grid-item8,
-  .grid-item10 {
-    display: none;
-  }
-
-  .body-display {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 70px;
-    height: 100vh;
-  }
-
-  .final-images {
-    display: grid;
-    background-image: url("Images/final-img.svg");
-    background-repeat: no-repeat;
-    background-position: top left;
-    grid-column: 1 / 3;
-    grid-row: 5 / 6;
-  }
-
-  .final-image2 {
-    display: grid;
-    background-image: url("Images/final-img2.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    grid-column: 3/4;
-    grid-row: 5/6;
-  }
-
-  .grid-item7 {
-    grid-column: 4/6;
-    grid-row: 5/6;
   }
 
   .about-grid-container {
@@ -869,7 +819,7 @@ textarea {
   }
 
   .about-section-tag {
-    width: 370px;
+    width: 25rem;
   }
 
   .get-started,
@@ -910,21 +860,6 @@ textarea {
     font-size: 110px;
     padding: 8%;
     text-align: center;
-  }
-
-  .project-name {
-    display: none;
-  }
-
-  .link {
-    background-color: var(--white-color);
-    background-position: fill;
-    color: var(--black-color);
-  }
-
-  .link:hover {
-    background-color: #fff;
-    color: #1a2236;
   }
 
   .background-card-footer {
@@ -999,91 +934,6 @@ textarea {
     margin-top: 35px;
   }
 
-  label {
-    color: #7d7c84;
-  }
-
-  .desk-btn {
-    text-decoration: none;
-    background-color: var(--white-color);
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    width: 250px;
-    height: 51px;
-    line-height: 24px;
-    display: inline-block;
-    margin-top: 5px;
-    padding-right: 15px;
-    padding-left: 30px;
-    border: 1px solid var(--black-color);
-  }
-
-  .desk-a-tag {
-    text-decoration: none;
-    color: var(--black-color);
-  }
-
-  .desk-btn:hover,
-  .desk-a-tag:hover {
-    background-color: var(--black-color);
-    color: var(--white-color);
-  }
-
-  .desk-btn:active {
-    border-width: 2px;
-  }
-
-  .arrow-icon {
-    margin-top: 2%;
-    padding-left: 5%;
-  }
-
-  .arrow-link {
-    display: none;
-  }
-
-  .desktop-name,
-  .desktop-name-2 {
-    display: block;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    color: #fff;
-    height: 15px;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 80%;
-    padding-bottom: 7%;
-  }
-
-  .desktop-name-2 {
-    padding-bottom: 5%;
-  }
-
-  .blue-bg-desktop {
-    text-decoration: none;
-    display: inline-block;
-    background-color: #98dede;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-size: 11px;
-    font-weight: 400;
-    padding: 9px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-    line-height: 80%;
-    color: #1a2236;
-  }
-
-  .remove {
-    display: none;
-  }
-
-  .justify-btn {
-    display: block;
-  }
-
   .animation-1 {
     color: var(--pink-color);
     transition: all 0.3s;
@@ -1136,85 +986,5 @@ textarea {
   .animation-1:hover::after {
     opacity: 0;
     transform: scale(0.1, 1);
-  }
-
-  .prev-btn,
-  .next-btn {
-    display: block;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    position: relative;
-    top: -2rem;
-    font-size: 1rem;
-    font-weight: 1rem;
-  }
-
-  .prev-btn {
-    position: relative;
-    top: 0.5rem;
-    left: 18rem;
-  }
-
-  .next-btn {
-    position: relative;
-    left: 60rem;
-    top: -0.5rem;
-  }
-
-  .workscard {
-    display: none;
-  }
-
-  .desktop-projects {
-    background-image: url(./dimages/desktop-bg-full.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 220vh;
-  }
-
-  .project-desktop {
-    position: absolute;
-    display: block;
-    left: 58rem;
-    top: 113rem;
-    overflow: hidden;
-  }
-
-  .project-desktop .project-name {
-    width: 24rem;
-    font-size: 2.5rem;
-    font-weight: 500;
-  }
-
-  .project-desktop .project-name,
-  .project-desktop-2 .project-name {
-    display: inline-block;
-    padding: 0%;
-    margin: 0%;
-  }
-
-  .project-desktop-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    position: absolute;
-    left: 31rem;
-    top: 93rem;
-    width: 50rem;
-  }
-
-  .project-desktop-2 .project-name {
-    font-size: 3.5rem;
-    font-weight: 600;
-    width: 50rem;
-    margin-bottom: 1rem;
-  }
-
-  .project-desktop-2 .blue-bg {
-    width: 8rem;
-    font-size: 1rem;
-    margin-right: 1rem;
   }
 }
