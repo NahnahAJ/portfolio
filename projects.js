@@ -1,5 +1,6 @@
 const projectSection = document.querySelector('.projectsContainer');
 const popUpWindow = document.querySelector('.popUps');
+const desktopBtns = document.querySelector('.desktop-ProjectsBtn');
 const works = [
   {
     id: 1,
